@@ -10,6 +10,7 @@ def insertion_sort(arr):
             if arr[j] < arr[j-1]:
                 # 위치 바꾸기
                 arr[j], arr[j-1] = arr[j-1], arr[j]
+                print(arr)
             # 작은값이 나오면 멈추기
             else:
                 break
