@@ -55,3 +55,21 @@ else:
    
      
 
+#### 정렬
+
+1. 병합정렬 잘봐두자..
+
+2. sort(), sorted() 구분과 key 사용
+
+   - sort()는 원본을 정렬 a.sort()
+
+   - sorted()는 새리스트에 정렬 sorted(a)
+
+   - 이중리스트일때 정렬기준을 선택해야하는 경우 key사용
+
+     ```python
+     arr.sort(key=lambda x: (x[1], x[0]))
+     # 2번째요소 1번째 요소 순서로 정렬기준
+     ```
+
+     
