@@ -14,10 +14,12 @@
 # 첫째 줄에 X'1, X'2, ..., X'N을 공백 한 칸으로 구분해서 출력한다.
 n = int(input())
 nums = list(map(int, input().split()))
-new_nums = list(set(sorted(nums)))
-for i in range(n):
-    cnt = 0
-    for j in new_nums:
-        if nums[i] > j:
-            cnt += 1
-    print(cnt, end=" ")
+# 중복제거 정렬
+new = sorted(list(set(nums)))
+# 딕셔너리 사용
+d = dict()
+for i in range(len(new)):
+    d[new[i]] = i
+for i in nums:
+    print(d[i], end=" ")
+
