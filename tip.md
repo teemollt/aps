@@ -86,9 +86,22 @@ else:
    - 리스트에만 갇혀있지마...
    - collections 모듈의 Counter 확인
 
-#### etc
+#### 시간복잡도 관련
 
 ##### 1.  in 의 시간복잡도
 
 list에 특정 값이 있는지 확인할때  in 의 시간복잡도는 O( n ) 
 길이 n의 리스트를 선형으로 순회하므로.
+
+##### 2. 스택, 큐 내용 추가하자
+
+스택 큐 구현시 collectionsd의 dequeue 활용하면 수행시간 단축 
+
+```python
+from collections import dequeue
+dq = dequeue()
+dq.append()
+dq.leftpop()
+dq.rightpop()
+```
+
