@@ -1,15 +1,17 @@
-n = int(input())
-a = list(map(int, input().split()))
-c=1
-s=[]
-r=""
-for i in a:
-    while c<=i:
-        s+=[c]
-        c+=1
-        r+="+\n"
-    if s[-1]==i:
-        s.pop()
-        r+="-\n"
-    else:r="NO";break
-print(r)
+N = int(input())
+
+for i in range(N):
+    mapp = list(input())
+    while len(mapp) != 0:
+        if mapp[0] == ')':
+            print('NO')
+            break
+        else:
+            if ')' in mapp:
+                mapp.remove(')')
+                mapp.remove('(')
+            else:
+                print('NO')
+                break
+    if len(mapp) == 0:
+        print('YES')
