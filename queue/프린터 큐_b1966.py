@@ -22,8 +22,16 @@
 # 이때 맨 왼쪽은 0번째라고 하자. 두 번째 줄에는 N개 문서의 중요도가 차례대로 주어진다. 중요도는 1 이상 9 이하의 정수이고,
 # 중요도가 같은 문서가 여러 개 있을 수도 있다.
 from sys import stdin
+import heapq
 from collections import deque
 t = int(stdin.readline())
 # n 문서개수, m 궁금한 문서가 queue에서 몇번째 있는지
-n, m = int(stdin.readline())
+n, m = map(int, stdin.readline().split())
+pri = list(map(int, stdin.readline().split()))
+h = []
+# 문서 중요도 차례대로
+for i in range(n):
+    heapq.heappush(h, (pri[]))
+
+
 
