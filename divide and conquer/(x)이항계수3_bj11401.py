@@ -5,7 +5,11 @@
 #         return 1
 #     return fac(n-1)*n
 #
-# n, k = map(int, input().split())
+n, k = map(int, input().split())
 #
 # rst = (fac(n) / (fac(k) * fac(n-k))) % 1000000007
 # print(rst)
+def fac(n):
+    if n == 1:
+        return 1
+    return fac(n-1)
