@@ -8,7 +8,7 @@ rst = 0
 while l <= r:
     mid = (l+r)//2
     gt = 0
-    for tree in trees:
+    for tree in trees):
         if mid < tree:
             gt += (tree - mid)
     if gt >= m:
