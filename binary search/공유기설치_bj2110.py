@@ -25,4 +25,9 @@ while min_g <= max_g:
     else:
         # cnt에 도달하지 못했다면 설치 가능거리를 너무 멀게 잡은거니까 짧게 좁혀주자
         max_g = mid-1
+# max_g가 답인이유: 마지막 min, max가 같아진 경우에 cnt 요건을 충족 못하게 되면 else문을 실행함
+# 이때 이미 max_g와 같아진 min_g는 변하지않고 max_g만 mid -1이 되어
+# 다음 while문의 조건을 충족시키지 못하여 반복이 종료됨.
+# 이때 mid에 남아있는 값은 이전 회차에서 min, max가 동일했을때 즉 실패했을때의 mid값임.
+# 반면 max_g는 마지막에 실패한 mid 값에 -1을 해주어 성공했었던 값으로 갱신됨.
 print(max_g)
