@@ -122,3 +122,13 @@ ex) 계란낙하문제
   3. 즉, x층에서 낙하하면 계란이 깨지는지 아닌지를 판별하는 함수를 1개 만들고, 깨지지않는 최대층을 찾기위해
      그 함수를 이진탐색으로 돌려보면 됨.
 
+##### 힙 (최대, 최소)
+
+```python
+# 힙큐 모듈 사용법 디폴트는 min heap으로 동작
+# 최대힙으로 사용하려면 데이터 넣고 꺼낼때 -를 붙여서 사용
+# heapq.heappush(heap, item) : item을 heap에 추가
+# heapq.heappop(heap) : heap에서 가장 작은 원소를 pop & 리턴. 비어 있는 경우 IndexError가 호출됨.
+# heapq.heapify(x) : 리스트 x를 즉각적으로 heap으로 변환함 (in linear time, O(N) )
+# 튜플로도 푸쉬할수 있음. 팝할때도 튜플로 나옴. 앞쪽 값을 기준으로 삽입
+```
