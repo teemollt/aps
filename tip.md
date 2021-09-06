@@ -81,9 +81,10 @@ else:
      # arr-> list
      ```
 
-4. 검색할때 dict를 만들어서 사용하면 빠른 경우가 있음
+4. 검색할때 dict를 만들어서 사용하면 빠른 경우가 있음 검색 시간복잡도 O(1)
 
    - 리스트에만 갇혀있지마...
+   - key, value 튜플쌍 dict.items() 사용
    - collections 모듈의 Counter 확인 +1
 
 #### 시간복잡도 관련
