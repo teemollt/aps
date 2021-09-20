@@ -10,3 +10,19 @@
 # 중복되는 수열을 여러 번 출력하면 안되며, 각 수열은 공백으로 구분해서 출력해야 한다.
 #
 # 수열은 사전 순으로 증가하는 순서로 출력해야 한다.
+n, m = map(int, input().split())
+arr = [0]*m
+used = [0]*(n+1)
+def sol(d):
+    if d == m:
+        for i in arr:
+            print(i, end=" ")
+        print()
+        return
+    for i in range(1, n+1):
+        if not used[i]:
+            arr[d] = i
+            used[i] = 1
+            sol(d+1)
+            used[i] = 0
+sol(0)
