@@ -51,4 +51,4 @@ arr = [5,3,2,1,1,54,5,3,3,1,5,47,56,35,23,4]
 arr2 = [5,4,3,2,1]
 arr3 = [1,1,2,1,1]
 # print(arr)
-print(quick_sort(arr3, 0, len(arr3)-1))
+print(quick_sort(arr, 0, len(arr3)-1))
